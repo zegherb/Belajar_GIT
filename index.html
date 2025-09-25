@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAJARUS - Lapor Jalan Rusak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <span class="font-bold text-xl">LAJARUS</span>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="#home" class="hover:bg-blue-700 px-3 py-2 rounded">Home</a>
+          <a href="#features" class="hover:bg-blue-700 px-3 py-2 rounded">Fitur</a>
+          <a href="#contact" class="hover:bg-blue-700 px-3 py-2 rounded">Kontak</a>
+        </div>
+        <!-- Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-2 pt-2 pb-4 space-y-1 bg-blue-600">
+      <a href="#home" class="block px-3 py-2 rounded hover:bg-blue-700">Home</a>
+      <a href="#features" class="block px-3 py-2 rounded hover:bg-blue-700">Fitur</a>
+      <a href="#contact" class="block px-3 py-2 rounded hover:bg-blue-700">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20 bg-blue-100">
+    <h1 class="text-4xl font-bold mb-4">Selamat Datang di LAJARUS</h1>
+    <p class="text-lg mb-8">Aplikasi untuk melaporkan jalan rusak di kota Anda dengan cepat dan mudah.</p>
+    <a href="#features" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Lihat Fitur</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Fitur Utama</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white rounded shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">Laporkan Jalan Rusak</h3>
+        <p>Kirim laporan lengkap dengan foto lokasi jalan rusak secara instan.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">Pantau Status</h3>
+        <p>Melihat status laporan Anda hingga diperbaiki oleh pihak terkait.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">Notifikasi Update</h3>
+        <p>Dapatkan notifikasi setiap ada update terbaru terkait laporan Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-200">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Kontak Kami</h2>
+      <p class="mb-6">Untuk pertanyaan lebih lanjut, hubungi kami di:</p>
+      <p class="font-bold">Email: info@lajarus.com</p>
+      <p class="font-bold">Telepon: +62 812 3456 7890</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 text-center">
+    © 2025 LAJARUS. All rights reserved.
+  </footer>
+
+  <!-- Script Hamburger -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
