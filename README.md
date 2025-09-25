@@ -1,9 +1,9 @@
 pesan commit di github
 
-feat: tambah fitur login
-fix: perbaiki bug validasi form
-docs: update README
-style: rapihin indentasi CSS
-refactor: ubah struktur kode tanpa nambah fitur
-test: tambah unit test untuk auth
-chore: update dependencies
+1. feat: tambah fitur login
+2. fix: perbaiki bug validasi form
+3. docs: update README
+4. style: rapihin indentasi CSS
+5. refactor: ubah struktur kode tanpa nambah fitur
+6. test: tambah unit test untuk auth
+7. chore: update dependencies
